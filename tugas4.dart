@@ -50,7 +50,7 @@ class tugas4 extends StatelessWidget {
             SizedBox(height: 20),
             Container(
               width: double.infinity,
-              height: 230,
+              height: 250,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -66,7 +66,15 @@ class tugas4 extends StatelessWidget {
                     bottomLeft: Radius.circular(25),
                     bottomRight: Radius.circular(25),
                   )
-              )
+              ),
+              child: Text(
+                "Next Workout",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             )
           ],
         ),
