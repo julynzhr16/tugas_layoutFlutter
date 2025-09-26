@@ -16,7 +16,9 @@ class tugas4 extends StatelessWidget {
                 Expanded(
                   child: Text(
                     "Training",
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 22, 
+                      fontWeight: FontWeight.bold),
                   ),
                 ),
                 Row(
@@ -36,7 +38,9 @@ class tugas4 extends StatelessWidget {
               children: [
                 Text(
                   "Your Program",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 18, 
+                    fontWeight: FontWeight.bold),
                 ),
                 Text("Details"),
               ],
@@ -64,16 +68,30 @@ class tugas4 extends StatelessWidget {
               ),
               padding: EdgeInsets.only(left: 20, top: 20),
               child: Container(
-                child: Text(
-                  "Next Workout",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: Column(
+                  children: [
+                    Text(
+                      "Next Workout",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      "Lets Toning\nand Glutes Workout"
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),
+
           ],
         ),
       ),
