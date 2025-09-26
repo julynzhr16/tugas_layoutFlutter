@@ -69,6 +69,7 @@ class tugas4 extends StatelessWidget {
               padding: EdgeInsets.only(left: 20, top: 20),
               child: Container(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Next Workout",
@@ -80,7 +81,7 @@ class tugas4 extends StatelessWidget {
                     ),
                     SizedBox(height: 8),
                     Text(
-                      "Lets Toning\nand Glutes Workout"
+                      "Lets Toning\nand Glutes Workout",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
@@ -91,6 +92,20 @@ class tugas4 extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 20),
+
+            Container(
+              width: double.infinity,
+              height: 100,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                image: DecorationImage(
+                  image: AssetImage("gambar/card.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            )
 
           ],
         ),
