@@ -16,18 +16,17 @@ class tugas4 extends StatelessWidget {
                 Expanded(
                   child: Text(
                     "Training",
-                    style: TextStyle(
-                      fontSize: 22, fontWeight: FontWeight.bold,
-                    ),
-                  ), 
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
                 ),
-                Row(children: [
-                  Icon(Icons.chevron_left),
-                  Icon(Icons.calendar_month),
-                  Icon(Icons.chevron_right),
-                ],
+                Row(
+                  children: [
+                    Icon(Icons.chevron_left),
+                    Icon(Icons.calendar_month),
+                    Icon(Icons.chevron_right),
+                  ],
                 ),
-              ]
+              ],
             ),
 
             SizedBox(height: 20),
@@ -37,16 +36,12 @@ class tugas4 extends StatelessWidget {
               children: [
                 Text(
                   "Your Program",
-                  style: TextStyle(
-                    fontSize: 18, fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                  "Details"
-                ),
+                Text("Details"),
               ],
             ),
-            
+
             SizedBox(height: 20),
             Container(
               width: double.infinity,
@@ -55,27 +50,30 @@ class tugas4 extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [
                     Colors.purple,
-                    const Color.fromARGB(209, 255, 255, 255)
+                    const Color.fromARGB(255, 255, 255, 255),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  ),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(350),
-                    bottomLeft: Radius.circular(25),
-                    bottomRight: Radius.circular(25),
-                  )
-              ),
-              child: Text(
-                "Next Workout",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+                ),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(120),
+                  bottomLeft: Radius.circular(25),
+                  bottomRight: Radius.circular(25),
                 ),
               ),
-            )
+              padding: EdgeInsets.only(left: 20, top: 20),
+              child: Container(
+                child: Text(
+                  "Next Workout",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
