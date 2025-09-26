@@ -44,8 +44,29 @@ class tugas4 extends StatelessWidget {
                 Text(
                   "Details"
                 ),
-                SizedBox( height: 20)
               ],
+            ),
+            
+            SizedBox(height: 20),
+            Container(
+              width: double.infinity,
+              height: 230,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.purple,
+                    const Color.fromARGB(209, 255, 255, 255)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(350),
+                    bottomLeft: Radius.circular(25),
+                    bottomRight: Radius.circular(25),
+                  )
+              )
             )
           ],
         ),
