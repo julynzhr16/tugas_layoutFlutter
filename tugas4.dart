@@ -40,7 +40,7 @@ class tugas4 extends StatelessWidget {
                   "Your Program",
                   style: TextStyle(
                     fontSize: 18, 
-                    fontWeight: FontWeight.bold),
+                  ),
                 ),
                 Text("Details"),
               ],
@@ -49,7 +49,7 @@ class tugas4 extends StatelessWidget {
             SizedBox(height: 20),
             Container(
               width: double.infinity,
-              height: 250,
+              height: 200,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -92,7 +92,7 @@ class tugas4 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 50),
 
             Container(
               width: double.infinity,
