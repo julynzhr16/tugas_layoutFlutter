@@ -28,6 +28,29 @@ class tugas4 extends StatelessWidget {
                 ],
                 ),
               ]
+            ),
+
+            SizedBox(height: 20),
+
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    "Your Program"
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
+                )
+                Row(
+                  children: [
+                    Text(
+                      "Details",
+                    )
+                  ],
+                )
+              ],
             )
           ],
         ),
