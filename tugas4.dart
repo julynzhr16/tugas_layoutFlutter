@@ -98,13 +98,17 @@ class tugas4 extends StatelessWidget {
               width: double.infinity,
               height: 100,
               decoration: BoxDecoration(
-                color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
+                color: Colors.white,
+              child: Stack(
+                children: [
+                  Image(image: "gambar/card.jpg"),
+                ],
+              ),
                 image: DecorationImage(
                   image: AssetImage("gambar/card.jpg"),
                   fit: BoxFit.cover,
                 ),
-              ),
             )
 
           ],
