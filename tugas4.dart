@@ -16,10 +16,7 @@ class tugas4 extends StatelessWidget {
                 Expanded(
                   child: Text(
                     "Training",
-                    style: TextStyle(
-                      fontSize: 20, 
-                      fontWeight: FontWeight.bold
-                      ),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
                 Row(
@@ -37,7 +34,7 @@ class tugas4 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Your Program", style: TextStyle(fontSize: 16)),
-                Text("Details", style: TextStyle(fontSize: 16),),
+                Text("Details", style: TextStyle(fontSize: 16)),
               ],
             ),
 
@@ -124,10 +121,7 @@ class tugas4 extends StatelessWidget {
                         SizedBox(height: 4),
                         Text(
                           "Keep it up\nstick to your plan",
-                          style: TextStyle(
-                            color: Colors.black, 
-                            fontSize: 10
-                            ),
+                          style: TextStyle(color: Colors.black, fontSize: 10),
                         ),
                       ],
                     ),
@@ -135,28 +129,32 @@ class tugas4 extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Text(
               "Area of focus",
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 15,),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Container(
-                    height: 10,
-                    margin: EdgeInsets.only(right: 10),
-                  child: Image.asset("gambar/ex3.png", 
-                  fit: BoxFit.cover,),
+                    height: 135,
+                    width: 135,
+                    child: Image.asset("gambar/ex3.png", fit: BoxFit.contain),
+                  ),
+                ),
+                SizedBox(width: 12),
+                Expanded(
+                  child: Container(
+                    height: 135,
+                    width: 135,
+                    child: Image.asset("gambar/ex4.png", fit: BoxFit.contain),
                   ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),
