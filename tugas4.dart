@@ -37,7 +37,6 @@ class tugas4 extends StatelessWidget {
                 Text("Details", style: TextStyle(fontSize: 16)),
               ],
             ),
-
             SizedBox(height: 15),
             Container(
               width: double.infinity,
@@ -58,32 +57,45 @@ class tugas4 extends StatelessWidget {
                   bottomRight: Radius.circular(25),
                 ),
               ),
-              padding: EdgeInsets.only(left: 20, top: 20),
-              child: Container(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Next Workout",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Next Workout",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 4),
-                    Text(
-                      "Lets Toning\nand Glutes Workout",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
+                      SizedBox(height: 4),
+                      Text(
+                        "Lets Toning\nand Glutes Workout",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                  ],
-                ),
+                      Text(
+                        "60 min",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
+
             SizedBox(height: 50),
             Container(
               width: double.infinity,
@@ -141,7 +153,6 @@ class tugas4 extends StatelessWidget {
                 Expanded(
                   child: Container(
                     height: 135,
-                    width: 135,
                     child: Image.asset("gambar/ex3.png", fit: BoxFit.contain),
                   ),
                 ),
@@ -149,7 +160,6 @@ class tugas4 extends StatelessWidget {
                 Expanded(
                   child: Container(
                     height: 135,
-                    width: 135,
                     child: Image.asset("gambar/ex4.png", fit: BoxFit.contain),
                   ),
                 ),
