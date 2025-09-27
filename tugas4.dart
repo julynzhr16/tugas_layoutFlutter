@@ -17,7 +17,7 @@ class tugas4 extends StatelessWidget {
                   child: Text(
                     "Training",
                     style: TextStyle(
-                      fontSize: 22, 
+                      fontSize: 20, 
                       fontWeight: FontWeight.bold
                       ),
                   ),
@@ -32,23 +32,19 @@ class tugas4 extends StatelessWidget {
               ],
             ),
 
-            SizedBox(height: 20),
-
+            SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Your Program", 
-                style: TextStyle(
-                  fontSize: 18)
-                ),
-                Text("Details"),
+                Text("Your Program", style: TextStyle(fontSize: 16)),
+                Text("Details", style: TextStyle(fontSize: 16),),
               ],
             ),
 
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             Container(
               width: double.infinity,
-              height: 200,
+              height: 130,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -74,16 +70,16 @@ class tugas4 extends StatelessWidget {
                       "Next Workout",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 14,
+                        fontSize: 12,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 8),
+                    SizedBox(height: 4),
                     Text(
                       "Lets Toning\nand Glutes Workout",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -122,7 +118,7 @@ class tugas4 extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.blue,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14,
+                            fontSize: 12,
                           ),
                         ),
                         SizedBox(height: 4),
@@ -130,7 +126,7 @@ class tugas4 extends StatelessWidget {
                           "Keep it up\nstick to your plan",
                           style: TextStyle(
                             color: Colors.black, 
-                            fontSize: 12
+                            fontSize: 10
                             ),
                         ),
                       ],
@@ -147,6 +143,20 @@ class tugas4 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(height: 15,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Container(
+                    height: 10,
+                    margin: EdgeInsets.only(right: 10),
+                  child: Image.asset("gambar/ex3.png", 
+                  fit: BoxFit.cover,),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
