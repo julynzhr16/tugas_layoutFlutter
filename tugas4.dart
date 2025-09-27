@@ -18,7 +18,8 @@ class tugas4 extends StatelessWidget {
                     "Training",
                     style: TextStyle(
                       fontSize: 22, 
-                      fontWeight: FontWeight.bold),
+                      fontWeight: FontWeight.bold
+                      ),
                   ),
                 ),
                 Row(
@@ -36,11 +37,9 @@ class tugas4 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  "Your Program",
-                  style: TextStyle(
-                    fontSize: 18, 
-                  ),
+                Text("Your Program", 
+                style: TextStyle(
+                  fontSize: 18)
                 ),
                 Text("Details"),
               ],
@@ -87,7 +86,7 @@ class tugas4 extends StatelessWidget {
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -102,46 +101,52 @@ class tugas4 extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage("gambar/card.jpg"),
                   fit: BoxFit.cover,
+                ),
+              ),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    left: 10,
+                    bottom: 10,
+                    child: Image.asset("gambar/figure1.png", height: 120),
+                  ),
+                  Positioned(
+                    right: 300,
+                    top: 25,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "You are doing great",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          "Keep it up\nstick to your plan",
+                          style: TextStyle(
+                            color: Colors.black, 
+                            fontSize: 12
+                            ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Positioned(
-                  left: 10,
-                  bottom: 10,
-                  child: Image.asset("gambar/figure1.png", height: 120,), 
-                ),
-                Positioned(
-                  left: 120,
-                  top: 25,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                      "You are doing great",
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                      ),
-                    
-                      ),
-                      SizedBox(height: 4,),
-                      Text(
-                        "Keep it up\nstick to your plan",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 12,
-                        ),
-                      )
-                    ],
-                  ),
-                )
-              ],
+            SizedBox(height: 20,),
+            Text(
+              "Area of focus",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            )
-
           ],
         ),
       ),
