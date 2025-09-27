@@ -82,13 +82,20 @@ class tugas4 extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text(
-                        "60 min",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      SizedBox(height: 15),
+                      Row(
+                        children: [
+                          Icon(Icons.timer, color: Colors.white, size: 16),
+                          SizedBox(width: 4),
+                          Text(
+                            "60 min",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -102,7 +109,6 @@ class tugas4 extends StatelessWidget {
               height: 100,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.white,
                 image: DecorationImage(
                   image: AssetImage("gambar/card.jpg"),
                   fit: BoxFit.cover,
